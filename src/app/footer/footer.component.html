@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h4>Kontakt</h4>
+        <ng-container *ngTemplateOutlet="contactTemplate"></ng-container>
+      </div>
+      <div class="col-md-6">
+        <h4>Impressum</h4>
+        <p><a href="#">Hier finden Sie unser Impressum</a></p>
+      </div>
+    </div>
+  </div>
+
+  <ng-template #contactTemplate>
+    <p>123 Beispielstraße<br>12345 Musterstadt<br>Telefon: 0123 456789<br>E-Mail: kontakt@example.com</p>
+  </ng-template>
