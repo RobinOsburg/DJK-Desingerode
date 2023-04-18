@@ -9,15 +9,15 @@
       <span routerLink="/vorstand">Vorstand</span>
       <span (click)="toggleSparten()">Sparten</span>
       <div *ngIf="spartenExpanded" class="subLinks">
-        <span routerLink="">Boule / Petanque</span>
-        <span routerLink="">Damengymnastik</span>
-        <span routerLink="">Fußball-Herren</span>
-        <span routerLink="">Fußball-Jugend</span>
-        <span routerLink="">Herren-Aktiv</span>
-        <span routerLink="">Mutter-Kind Turnen</span>
-        <span routerLink="">Sauna-Damen</span>
-        <span routerLink="">Sauna-Herren</span>
-        <span routerLink="">Yoga</span>
+        <span routerLink="/boule">Boule / Petanque</span>
+          <span routerLink="/damengymnastik">Damengymnastik</span>
+          <span routerLink="/fussball-herren">Fußball-Herren</span>
+          <span routerLink="/fussball-jugend">Fußball-Jugend</span>
+          <span routerLink="/herren-aktiv">Herren-Aktiv</span>
+          <span routerLink="/mutter-kind-turnen">Mutter-Kind Turnen</span>
+          <span routerLink="/sauna-damen">Sauna-Damen</span>
+          <span routerLink="/sauna-herren">Sauna-Herren</span>
+          <span routerLink="/yoga">Yoga</span>
       </div>
       <span routerLink="/impressum">Impressum</span>
     </div>
@@ -32,7 +32,7 @@
     <!-- header content here -->
     <div class="imageAndName">
       <div>
-        <img src="../../assets/img/logo.jpg" alt="">
+        <img src="../../assets/img/DJKVorlage.jpg" alt="">
       </div>
       <span>
         <h1>DJK-Desingerode</h1>
@@ -47,13 +47,13 @@
 
 
 
+<!----------------------------------------------------------------------------------------------------------->
 
 
 
 
 
-
-  <!-- VORSTAND !!! -->
+  <!-- Main Content here !!! -->
 
   <span class="headLine">
     <h1>Organe des Vereins</h1>
@@ -67,6 +67,8 @@
     
       <mat-card-content>
         <div class="vorstandCard">
+
+
           <span>
             <h2> 1.Vorsitzender</h2>
           </span>
@@ -122,6 +124,9 @@
               </span>
               <span>Manuel Wettig</span>
               <span>Email: kontakt@djkdesingerode.de</span>
+
+
+
         </div>
       </mat-card-content>
     </mat-card>
