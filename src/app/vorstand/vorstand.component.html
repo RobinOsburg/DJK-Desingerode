@@ -2,34 +2,44 @@
 
 <mat-sidenav-container class="header-container">
 
-    <mat-sidenav #sidenav class="sidenav">
-      <!-- sidenav content here -->
-      <div class="sideNavLinks">
-        <span routerLink="/">Aktuelles</span>
-        <span routerLink="/vorstand">Vorstand</span>
-        <span routerLink="/spielplan">Spielplan</span>
-        <span routerLink="/veranstaltugen">Veranstaltugen</span>
-        <span routerLink="/impressum">Impressum</span>
+  <mat-sidenav #sidenav class="sidenav">
+    <!-- sidenav content here -->
+    <div class="sideNavLinks">
+      <span routerLink="/">Aktuelles</span>
+      <span routerLink="/vorstand">Vorstand</span>
+      <span (click)="toggleSparten()">Sparten</span>
+      <div *ngIf="spartenExpanded" class="subLinks">
+        <span routerLink="">Boule / Petanque</span>
+        <span routerLink="">Damengymnastik</span>
+        <span routerLink="">Fußball-Herren</span>
+        <span routerLink="">Fußball-Jugend</span>
+        <span routerLink="">Herren-Aktiv</span>
+        <span routerLink="">Mutter-Kind Turnen</span>
+        <span routerLink="">Sauna-Damen</span>
+        <span routerLink="">Sauna-Herren</span>
+        <span routerLink="">Yoga</span>
       </div>
-    </mat-sidenav>
-  
-  
-    <mat-toolbar class="header-toolbar">
-  
-      <button mat-icon-button (click)="sidenav.toggle()">
-        <mat-icon>menu</mat-icon>
-      </button>
-      <!-- header content here -->
-      <div class="imageAndName">
-        <div>
-          <img src="../../assets/img/logo.jpg" alt="">
-        </div>
-        <span>
-          <h1>DJK-Desingerode</h1>
-        </span>
+      <span routerLink="/impressum">Impressum</span>
+    </div>
+  </mat-sidenav>
+
+
+  <mat-toolbar class="header-toolbar">
+
+    <button mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <!-- header content here -->
+    <div class="imageAndName">
+      <div>
+        <img src="../../assets/img/logo.jpg" alt="">
       </div>
-  
-    </mat-toolbar>
+      <span>
+        <h1>DJK-Desingerode</h1>
+      </span>
+    </div>
+
+  </mat-toolbar>
 
 
 
@@ -43,57 +53,95 @@
 
 
 
-    <!-- VORSTAND !!! -->
-  
-    <span class="headLine">
-        <h1>Organe des Vereins</h1>
-    </span>
-  
-  
-    <div class="main-container">
+  <!-- VORSTAND !!! -->
+
+  <span class="headLine">
+    <h1>Organe des Vereins</h1>
+  </span>
+
+
+  <div class="main-container">
 
 
     <mat-card class="example-card">
-        <img mat-card-image src="../../assets/img/vorstand.jpg" alt="Image">
-        <mat-card-content>
-            <div class="vorstandCard">
-                <span><h2> 1. Vorsitzender</h2></span>
-                <span>Max Mustermann</span>
-                <span>Telefon: 01234546789</span>
-                <span>E-Mail: max@mustermann.de</span>
-            </div>
-        </mat-card-content>
-      </mat-card>
-
-
-
-      <mat-card class="example-card">
-        <img mat-card-image src="../../assets/img/vorstand.jpg" alt="Image">
-        <mat-card-content>
-            <div class="vorstandCard">
-                <span><h2> 2. Vorsitzender</h2></span>
-                <span>Jon Doe</span>
-                <span>Telefon: 01234546789</span>
-                <span>E-Mail: jon@doe.de</span>
-            </div>
-        </mat-card-content>
-      </mat-card>
-
-
-      <mat-card class="example-card">
-        <img mat-card-image src="../../assets/img/vorstand.jpg" alt="Image">
-        <mat-card-content>
-            <div class="vorstandCard">
-                <span><h2> Pressewart</h2></span>
-                <span>Jane Doe</span>
-                <span>Telefon: 01234546789</span>
-                <span>E-Mail: jane@doe.de</span>
-            </div>
-        </mat-card-content>
-      </mat-card>
-
     
+      <mat-card-content>
+        <div class="vorstandCard">
+          <span>
+            <h2> 1.Vorsitzender</h2>
+          </span>
+          <span>Uwe Lüter </span>
+          <span>Desingeröder Str. 13 </span>
+          <span>37115 Duderstadt-Desingerode</span>
+          <span>Email: kontakt@djkdesingerode.de <br>
+            Email: uwe.lueter@t-online.de</span>
 
-    </div>
-  
-  </mat-sidenav-container>
+
+            <span>
+              <h2> 2.Vorsitzender</h2>
+            </span>
+            <span>Andrè Weber</span>
+            <span>Email: kontakt@djkdesingerode.de</span>
+
+
+            <span>
+              <h2> Kassenwart</h2>
+            </span>
+            <span>Ottmar Rink</span>
+            <span>Burgstr. 13</span>
+            <span>37115 Duderstadt-Desingerode</span>
+            <span>Email: kontakt@djkdesingerode.de <br>
+              Email: ottmarrink62@web.de</span>
+
+
+              <span>
+                <h2> Schriftführer</h2>
+              </span>
+              <span>Marek Schakowske</span>
+              <span>Email: kontakt@djkdesingerode.de </span>
+
+
+              <span>
+                <h2> Frauenwartin</h2>
+              </span>
+              <span>Anuva Isecke</span>
+              <span>Email: kontakt@djkdesingerode.de</span>
+            
+
+
+              <span>
+                <h2> Jugendobmann</h2>
+              </span>
+              <span>Andreas Kirchner</span>
+              <span>Email: kontakt@djkdesingerode.de</span>
+
+
+
+              <span>
+                <h2> Fußballobmann</h2>
+              </span>
+              <span>Manuel Wettig</span>
+              <span>Email: kontakt@djkdesingerode.de</span>
+        </div>
+      </mat-card-content>
+    </mat-card>
+
+  </div>
+
+</mat-sidenav-container>
+
+
+
+
+    <!-- <mat-card class="example-card">
+      <img mat-card-image src="../../assets/img/vorstand.jpg" alt="Image">
+      <mat-card-content>
+        <div class="vorstandCard">
+          <span>
+            <h2> 2. Vorsitzender</h2>
+          </span>
+          <span>Andrè Weber</span>
+          <span>Email: kontakt@djkdesingerode.de</span>
+        </div>
+      </mat-card-content>
+    </mat-card> -->

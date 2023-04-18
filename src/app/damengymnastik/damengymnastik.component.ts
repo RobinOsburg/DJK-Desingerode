@@ -1,15 +1,14 @@
 import { Component } from '@angular/core';
 
-
-
 @Component({
-  selector: 'app-info',
-  templateUrl: './info.component.html',
-  styleUrls: ['./info.component.scss']
+  selector: 'app-damengymnastik',
+  templateUrl: './damengymnastik.component.html',
+  styleUrls: ['./damengymnastik.component.scss']
 })
-export class InfoComponent {
+export class DamengymnastikComponent {
 
-  showFiller = false;
+
+
   spartenExpanded: boolean = false;
 
 

@@ -1,81 +1,7 @@
-.headLine {
-  padding-top: 16px;
-  padding-bottom: 16px;
-  display: flex;
-  justify-content: center;
-}
-
-
-.header-container {
-  width: 100vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header-toolbar {
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: white;
-
-}
-
-.header-toolbar img {
-  height: 50px;
-  margin-right: 24px;
-
-}
+// Main Inhalt !!!!!
 
 
 
-.sidenav {
-  width: 300px;
-  min-width: 300px;
-  max-width: 300px;
-  background-color: #FAFAFA;
-  position: fixed;
-  left: 0;
-}
-
-
-.sideNavLinks {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-size: 36px;
-  height: 100%;
-
-  :hover{
-    cursor: pointer;
-  }
-
-
-  span {
-    padding-bottom: 24px;
-    padding-top: 24px;
-    text-decoration: underline;
-
-
-  }
-}
-
-.imageAndName {
-  display: flex;
-  flex-direction: row;
-  padding-right: 36px;
-  align-items: center;
-  margin-top: 16px;
-  margin-bottom: 16px;
-
-
-  img {
-    border-radius: 100%;
-    width: 50px;
-  }
-}
 
 
 .main-container {
@@ -83,10 +9,11 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 50px;
-  margin-top: 36px;
-  margin-bottom: 36px;
+  padding-top: 36px;
+  padding-bottom: 36px;
   min-height: 56vh;
   width: 100%;
+
 }
 
 
@@ -99,6 +26,6 @@
 }
 
 .example-header-image {
-  background-image: url('../../assets/img/logo.jpg');
+  background-image: url('../../assets/img/DJKVorlage.jpg');
   background-size: cover;
 }

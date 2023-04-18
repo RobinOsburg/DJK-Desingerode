@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class VorstandComponent {
 
+  spartenExpanded: boolean = false;
+
+
+  toggleSparten() {
+    this.spartenExpanded = !this.spartenExpanded;
+  }
+
 }

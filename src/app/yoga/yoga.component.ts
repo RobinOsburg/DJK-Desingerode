@@ -1,15 +1,13 @@
 import { Component } from '@angular/core';
 
-
-
 @Component({
-  selector: 'app-info',
-  templateUrl: './info.component.html',
-  styleUrls: ['./info.component.scss']
+  selector: 'app-yoga',
+  templateUrl: './yoga.component.html',
+  styleUrls: ['./yoga.component.scss']
 })
-export class InfoComponent {
+export class YogaComponent {
 
-  showFiller = false;
+
   spartenExpanded: boolean = false;
 
 

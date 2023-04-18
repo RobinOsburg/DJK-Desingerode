@@ -11,8 +11,16 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { VorstandComponent } from './vorstand/vorstand.component';
-import { SpielplanComponent } from './spielplan/spielplan.component';
 import { MainsideComponent } from './mainside/mainside.component';
+import { BouleComponent } from './boule/boule.component';
+import { DamengymnastikComponent } from './damengymnastik/damengymnastik.component';
+import { FussballHerrenComponent } from './fussball-herren/fussball-herren.component';
+import { FussballJugendComponent } from './fussball-jugend/fussball-jugend.component';
+import { HerrenAktivComponent } from './herren-aktiv/herren-aktiv.component';
+import { MutterKindTurnenComponent } from './mutter-kind-turnen/mutter-kind-turnen.component';
+import { SaunaDamenComponent } from './sauna-damen/sauna-damen.component';
+import { SaunaHerrenComponent } from './sauna-herren/sauna-herren.component';
+import { YogaComponent } from './yoga/yoga.component';
 
 
 
@@ -25,8 +33,16 @@ import { MainsideComponent } from './mainside/mainside.component';
     FooterComponent,
     InfoComponent,
     VorstandComponent,
-    SpielplanComponent,
     MainsideComponent,
+    BouleComponent,
+    DamengymnastikComponent,
+    FussballHerrenComponent,
+    FussballJugendComponent,
+    HerrenAktivComponent,
+    MutterKindTurnenComponent,
+    SaunaDamenComponent,
+    SaunaHerrenComponent,
+    YogaComponent,
     
   ],
   imports: [

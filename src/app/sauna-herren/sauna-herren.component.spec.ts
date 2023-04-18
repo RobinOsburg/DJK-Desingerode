@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SpielplanComponent } from './spielplan.component';
+import { SaunaHerrenComponent } from './sauna-herren.component';
 
-describe('SpielplanComponent', () => {
-  let component: SpielplanComponent;
-  let fixture: ComponentFixture<SpielplanComponent>;
+describe('SaunaHerrenComponent', () => {
+  let component: SaunaHerrenComponent;
+  let fixture: ComponentFixture<SaunaHerrenComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SpielplanComponent ]
+      declarations: [ SaunaHerrenComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SpielplanComponent);
+    fixture = TestBed.createComponent(SaunaHerrenComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
