@@ -29,6 +29,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    background-color: lightgray;
   }
   
   .header-toolbar {
@@ -37,6 +39,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     align-items: center;
     justify-content: space-between;
     background-color: white;
+
+    button{
+      background-color: lightgray;
+      border: 0.5px solid black;
+      border-radius: 3px;
+    }
+    
   }
   
   .header-toolbar img {
@@ -53,27 +62,30 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     background-color: #FAFAFA;
     position: fixed;
     left: 0;
+    z-index: 9999; 
   }
+
+  
   
   
   .sideNavLinks {
+    z-index: 5000;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     font-size: 36px;
     height: 100vh;
-  
-    :hover{
-      cursor: pointer;
-    }
-  
+    
     span {
       padding-bottom: 24px;
       padding-top: 24px;
-      text-decoration: underline;
+      
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
     }
-
   }
   
   
@@ -81,10 +93,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   .subLinks{
     display: flex;
     flex-direction: column;
+
+    
     
     span{
-      text-decoration: none;
       font-size:  26px;
+      
+      
     }
 
   }
@@ -105,4 +120,40 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     }
 
   }
+
+
+
+
+  .SpartenCard{
+    margin: 150px;
+    min-height: 400px;
+    min-width: 600px;
+
+    h2{
+      margin-left: 60px;
+      margin-top: 15px;
+    }
+    
+    p{
+      margin-left: 50px;
+      margin-top: 25px;
+    }
+  }
+
+
+
+
+
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    overflow-y: scroll;
+    background: grey;
+    box-shadow: inset 0 0 6px #707070;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2e2e2e;
+    border-radius: 10px;
+}
   

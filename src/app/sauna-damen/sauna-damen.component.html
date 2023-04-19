@@ -1,54 +1,67 @@
 <mat-sidenav-container class="header-container">
 
-    <mat-sidenav #sidenav class="sidenav">
-      <!-- sidenav content here -->
-      <div class="sideNavLinks">
-        <span routerLink="/">Aktuelles</span>
-        <span routerLink="/vorstand">Vorstand</span>
-        <span (click)="toggleSparten()">Sparten</span>
-        <div *ngIf="spartenExpanded" class="subLinks">
-          <span routerLink="/boule">Boule / Petanque</span>
-          <span routerLink="/damengymnastik">Damengymnastik</span>
-          <span routerLink="/fussball-herren">Fußball-Herren</span>
-          <span routerLink="/fussball-jugend">Fußball-Jugend</span>
-          <span routerLink="/herren-aktiv">Herren-Aktiv</span>
-          <span routerLink="/mutter-kind-turnen">Mutter-Kind Turnen</span>
-          <span routerLink="/sauna-damen">Sauna-Damen</span>
-          <span routerLink="/sauna-herren">Sauna-Herren</span>
-          <span routerLink="/yoga">Yoga</span>
-        </div>
-        <span routerLink="/impressum">Impressum</span>
+  <mat-sidenav #sidenav class="sidenav">
+    <!-- sidenav content here -->
+    <div class="sideNavLinks">
+      <span routerLink="/">Aktuelles</span>
+      <span routerLink="/vorstand">Vorstand</span>
+      <span (click)="toggleSparten()">Sparten</span>
+      <div *ngIf="spartenExpanded" class="subLinks">
+        <span routerLink="/boule">Boule / Petanque</span>
+        <span routerLink="/damengymnastik">Damengymnastik</span>
+        <span routerLink="/fussball-herren">Fußball-Herren</span>
+        <span routerLink="/fussball-jugend">Fußball-Jugend</span>
+        <span routerLink="/herren-aktiv">Herren-Aktiv</span>
+        <span routerLink="/mutter-kind-turnen">Mutter-Kind Turnen</span>
+        <span routerLink="/sauna-damen">Sauna-Damen</span>
+        <span routerLink="/sauna-herren">Sauna-Herren</span>
+        <span routerLink="/yoga">Yoga</span>
       </div>
-    </mat-sidenav>
-  
-  
-    <mat-toolbar class="header-toolbar">
-  
-      <button mat-icon-button (click)="sidenav.toggle()">
-        <mat-icon>menu</mat-icon>
-      </button>
-      <!-- header content here -->
-      <div class="imageAndName">
-        <div>
-          <img src="../../assets/img/DJKVorlage.jpg" alt="">
-        </div>
-        <span>
-          <h1>DJK-Desingerode</h1>
-        </span>
-      </div>
-  
-    </mat-toolbar>
-
-
-    
-
-
-<!----------------------------------------------------------------------------------------------------------->
-
-
-    <div class="main-container">
-      <!-- Main Content here !!!!!! -->
-  
-  
-  
+      <span routerLink="/impressum">Impressum</span>
     </div>
+  </mat-sidenav>
+
+
+  <mat-toolbar class="header-toolbar">
+
+    <button mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <!-- header content here -->
+    <div class="imageAndName">
+      <div>
+        <img src="../../assets/img/DJKVorlage.jpg" alt="">
+      </div>
+      <span>
+        <h1>DJK-Desingerode</h1>
+      </span>
+    </div>
+
+  </mat-toolbar>
+
+
+
+
+
+  <!----------------------------------------------------------------------------------------------------------->
+
+
+  <div class="main-container">
+    <!-- Main Content here !!!!!! -->
+
+    <mat-card class="SpartenCard">
+      <mat-card-title>
+        <h2>Sauna Damen</h2>
+      </mat-card-title>
+      <mat-card-content>
+        <p>Zeit: Jeden Montag um 19:00 Uhr</p>
+        <p> Ort: Burgstr. 15 > in unserem Sporthaus</p>
+        <p>
+          Ansprechpartner: <br />
+          Birgit Jahnel <br />
+          Email: <a href="mailto:kontakt@djkdesingerode.de">kontakt@djkdesingerode.de</a>
+        </p>
+      </mat-card-content>
+    </mat-card>
+
+  </div>
